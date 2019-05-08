@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+    <addon id="script.module.libmediathek3-beta"
+           name="libmediathek3-beta"
+           version="1.5.4"
+           provider-name="sarbes">
+        <requires>
+            <import addon="xbmc.python" version="2.25.0" />
+        </requires>
+        <extension point="xbmc.python.module" library="lib" />
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+            <source>https://github.com/prof-membrane/plugin.video.libmediathek3</source>
+            <summary lang="en">Supplementary lib for Mediathek add-ons.</summary>
+            <description lang="en">This lib is a mini framework. It is used in following "Mediathek" Scrapers: 3sat, ARD, BR, Das Erste, MDR, SR, SWR, WDR, ZDF. It is also used in the add-ons Funk Mediathek, NHL Videocenter and Phoenix Mediathek.</description>
+        </extension>
+    </addon>
+
+    <addon id="script.module.libarte-beta"
+	     name="libarte-beta"
+	     version="1.0.3"
+	     provider-name="sarbes,MhhhxX">
+        <requires>
+            <import addon="xbmc.python" version="2.25.0" />
+            <import addon="script.module.libmediathek3-beta" version="1.5.4"/>
+        </requires>
+            <extension point="xbmc.python.module" library="lib" />
+            <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">This is a scraper for http://arte.tv.</summary>
+            <description lang="en">This is a scraper for http://arte.tv.</description>
+        </extension>
+    </addon>
+
+    <addon id="plugin.video.artemediathek-beta"
+       name="Arte Mediathek" version="1.0.3"
+       provider-name="sarbes,MhhhxX">
+        <requires>
+            <import addon="xbmc.python" version="2.25.0"/>
+            <import addon="script.module.libarte-beta" version="1.0.3"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <language>de</language>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        </extension>
+    </addon>
+</addons>
