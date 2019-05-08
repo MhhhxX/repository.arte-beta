@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="script.module.libmediathek3-beta"
-           name="libmediathek3-beta"
+    <addon id="script.module.libmediathek3beta"
+           name="libmediathek3beta"
            version="1.5.4"
-           provider-name="sarbes">
+           provider-name="sarbes,MhhhxX">
         <requires>
             <import addon="xbmc.python" version="2.25.0" />
         </requires>
@@ -17,13 +17,13 @@
         </extension>
     </addon>
 
-    <addon id="script.module.libarte-beta"
-	     name="libarte-beta"
+    <addon id="script.module.libartebeta"
+	     name="libartebeta"
 	     version="1.0.3"
 	     provider-name="sarbes,MhhhxX">
         <requires>
             <import addon="xbmc.python" version="2.25.0" />
-            <import addon="script.module.libmediathek3-beta" version="1.5.4"/>
+            <import addon="script.module.libmediathek3beta" version="1.5.4"/>
         </requires>
             <extension point="xbmc.python.module" library="lib" />
             <extension point="xbmc.addon.metadata">
@@ -33,12 +33,12 @@
         </extension>
     </addon>
 
-    <addon id="plugin.video.artemediathek-beta"
-       name="Arte Mediathek" version="1.0.3"
+    <addon id="plugin.video.artemediathekbeta"
+       name="Arte Mediathek Beta" version="1.0.3"
        provider-name="sarbes,MhhhxX">
         <requires>
             <import addon="xbmc.python" version="2.25.0"/>
-            <import addon="script.module.libarte-beta" version="1.0.3"/>
+            <import addon="script.module.libartebeta" version="1.0.3"/>
         </requires>
         <extension point="xbmc.python.pluginsource" library="default.py">
             <provides>video</provides>
