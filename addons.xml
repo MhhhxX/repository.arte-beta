@@ -19,7 +19,7 @@
 
     <addon id="script.module.libartebeta"
 	     name="libartebeta"
-	     version="1.0.5"
+	     version="1.0.6"
 	     provider-name="sarbes,MhhhxX">
         <requires>
             <import addon="xbmc.python" version="2.25.0" />
